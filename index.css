@@ -35,7 +35,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(183, 228, 207);
+    background-color: rgb(234, 214, 163);
     width: 28em;
 }
 
@@ -93,8 +93,8 @@ button {
     height: 3rem;
     margin: 1em .5em;
     font-size: 1.1rem;
-    border: 1px solid lightskyblue;
-    background-color: rgba(135, 188, 209, .9);
+    border: 1px solid lightgrey;
+    background-color: rgba(234, 214, 163, .9);
 }
 
 button:hover {
@@ -134,7 +134,7 @@ button:hover {
     margin: 1.5em;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 660px) {
     main {
         width: 660px;
     }
@@ -187,7 +187,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 415px) {
     body {
         background-image: none;
     }
