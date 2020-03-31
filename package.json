@@ -1,0 +1,19 @@
+{
+  "name": "kathrynroberts-sc48",
+  "version": "1.0.0",
+  "description": "kate sc48 site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Developer3027/kathrynroberts-sc48.git"
+  },
+  "author": "mason roberts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Developer3027/kathrynroberts-sc48/issues"
+  },
+  "homepage": "https://github.com/Developer3027/kathrynroberts-sc48#readme"
+}
