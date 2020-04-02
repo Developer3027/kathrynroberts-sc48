@@ -52,13 +52,14 @@ smalltext {
     font-size: 16px;
 }
 
-.card-body {
-    height: 40vmin;
-}
 
 /* Points Section */
 video {
     width: 100%;
+}
+
+.card-body {
+    height: 40vmin;
 }
 
 .icons {
@@ -130,8 +131,10 @@ input {
 .form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-right: .5rem;
+    margin-bottom: 1em;
     height: 50vmin;
 }
 
@@ -156,6 +159,7 @@ input {
 /* footer section */
 footer {
     background-color: #4182C5;
+    color: white;
 }
 
 .footer {
@@ -172,7 +176,6 @@ footer {
 }
 
 .footer-title {
-    color: white;
     padding: .5em;
 }
 
@@ -190,6 +193,7 @@ footer {
     align-items: flex-start;
     padding: 0 1em;
     margin: .5em;
+    margin-top: 1em;
 }
 
 .footer-info {
@@ -214,6 +218,46 @@ footer {
 
     #clockdiv {
         font-size: 15px;
+    }
+
+    .card-deck {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body {
+        height: 60vmin;
+    }
+
+    .envelope {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-group {
+        display: none;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        height: 60vmin;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
     }
 }
 
