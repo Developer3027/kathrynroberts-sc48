@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: url('../../img/flag.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+.layer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 2em;
+}
+
+.right {
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #78B4E3;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #4182C5;
+    display: inline-block;
+}
+
+smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.card-body {
+    height: 40vmin;
+}
+
+video {
+    width: 100%;
+}
+
+.letter-a {
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: .5em;
+    margin: 2em 0;
+    filter: drop-shadow(3px 3px 1px #666666);
+}
+
+.envelope {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.insert-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insert-photo img {
+    width: 400px;
+}
+
+.char-underline {
+    border-bottom: 3px solid lightcoral;
+}
+
+.logo-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    background-color: lightcoral;
+}
+
+@media screen and (max-width: 740px) {
+    .layer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #clockdiv {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 415px) {}
