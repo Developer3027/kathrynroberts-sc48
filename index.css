@@ -27,22 +27,33 @@
 
 /* Hero Section */
 .hero {
-    background: url('../../img/flag.jpg') no-repeat center center fixed;
+    background: url('./img/flag.jpg') no-repeat center center fixed;
     background-size: cover;
-    padding: 10% 0;
+    margin-top: 6%;
 }
 
 .layer {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: rgba(255, 255, 255, .8);
+    border-radius: 5px;
     padding: 2em;
 }
 
+.left {
+    height: 60%;
+    font-size: smaller !important;
+}
+
+.head-title {
+    font-size: 1.3em;
+}
+
 .right {
+    height: 60%;
     text-align: center;
     align-items: center;
-    padding-top: 2rem;
+    font-size: smaller !important;
 }
 
 /* Countdown Clock */
@@ -75,13 +86,15 @@ smalltext {
 }
 
 
-/* Points Section */
-video {
-    width: 100%;
-}
+/* Points Section
 
 .card-body {
     height: 40vmin;
+}
+*/
+video {
+    width: 100%;
+    border-radius: 5px;
 }
 
 .icons {
@@ -92,19 +105,23 @@ video {
     color: #4182C5;
 }
 
-/* letter section */
-.letter-a {
-    border: 1px solid lightgrey;
-    background-color: white;
-    padding: .5em;
-    margin: 2em 0;
-    filter: drop-shadow(3px 3px 1px #666666);
-}
+/* letter section 
 
 .envelope {
     display: grid;
     grid-template-columns: 60% 40%;
 }
+*/
+.letter-a {
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    background-color: white;
+    padding: .5em;
+    margin: 2em 0;
+    /*filter: drop-shadow(3px 3px 1px #666666);*/
+}
+
+
 
 .insert-photo {
     display: flex;
@@ -126,10 +143,18 @@ video {
     align-items: center;
     flex-direction: column;
     padding: 1em;
-    background-color: lightcoral;
+    background-color: #78B4E3;
+    border-radius: 5px;
 }
 
-/* contact section */
+/* contact section 
+
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+*/
 input {
     padding: .5rem;
     margin: 0 5px;
@@ -144,11 +169,7 @@ input {
     margin-top: 1rem;
 }
 
-.contact {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-}
+
 
 .form {
     display: flex;
@@ -224,6 +245,7 @@ footer {
     align-items: center;
     flex-direction: column;
     border: 1px solid lightgrey;
+    border-radius: 5px;
     padding: .5em;
 }
 
