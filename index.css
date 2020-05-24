@@ -29,7 +29,7 @@
 .hero {
     background: url('./img/flag.jpg') no-repeat center center fixed;
     background-size: cover;
-    margin-top: 6%;
+    margin-top: 6.5%;
 }
 
 .layer {
@@ -105,12 +105,22 @@ video {
     color: #4182C5;
 }
 
+/* About */
+
+.about-section {
+    background-color: rgb(185, 222, 250);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.about-img img {
+    width: 30%;
+    padding:1em;
+}
+
+
 /* letter section 
 
-.envelope {
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
 */
 .letter-a {
     border: 2px solid lightgrey;
@@ -121,7 +131,11 @@ video {
     /*filter: drop-shadow(3px 3px 1px #666666);*/
 }
 
-
+.envelope {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
 
 .insert-photo {
     display: flex;
@@ -252,6 +266,14 @@ footer {
 .footer-three {
     text-align: center;
     padding: 1.5em;
+}
+
+.copy {
+    font-size: .8em;
+}
+
+input {
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 740px) {
