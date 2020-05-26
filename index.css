@@ -291,8 +291,13 @@ input {
         flex-direction: column;
     }
 
-    .card-body {
+    /* .card-body {
         height: 70vmin;
+    } */
+
+    .about-img img {
+        width: 47%;
+        padding:.5em;
     }
 
     .envelope {
