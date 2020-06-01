@@ -28,28 +28,29 @@ const x = setInterval(function () {
 }, 1000)
 
 /* Hide Navbar scroll */
-const nav = document.querySelector('nav')
-const navLabel = document.querySelector('label')
-const heroMain = document.querySelector('.hero-main')
+// const nav = document.querySelector('nav')
+// const navLabel = document.querySelector('label')
+// const heroMain = document.querySelector('.hero-main')
 
-const mainOptions = {
-  threshold: '.20',
-  rootMargin: ''
-}
 
-const mainObserver = new IntersectionObserver(function (entries, mainObserver) {
-  entries.forEach(entry => {
-    console.log(entry)
-    if (!entry.isIntersecting) {
-      nav.classList.remove('nav-hide')
-      nav.classList.add('navbar-lite')
-      navLabel.classList.remove('hide-nav')
-    } else {
-      nav.classList.add('nav-hide')
-      nav.classList.remove('navbar-lite')
-      navLabel.classList.add('hide-nav')
-    }
-  })
-}, mainOptions)
+// const mainOptions = {
+//   threshold: '.20',
+//   rootMargin: ''
+// }
 
-mainObserver.observe(heroMain)
+// const mainObserver = new IntersectionObserver(function (entries, mainObserver) {
+//   entries.forEach(entry => {
+//     console.log(entry)
+//     if (!entry.isIntersecting) {
+//       nav.classList.remove('nav-hide')
+//       nav.classList.add('navbar-lite')
+//       navLabel.classList.remove('hide-nav')
+//     } else {
+//       nav.classList.add('nav-hide')
+//       nav.classList.remove('navbar-lite')
+//       navLabel.classList.add('hide-nav')
+//     }
+//   })
+// }, mainOptions)
+
+// mainObserver.observe(heroMain)

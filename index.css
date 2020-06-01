@@ -8,9 +8,7 @@ root {}
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 /* Nav */
-
 nav {
     border-radius: 3px;
 }
@@ -28,7 +26,6 @@ nav {
 }
 
 .don-btn:hover {
-    background-color: pink;
     color: white;
 
 }
@@ -40,7 +37,6 @@ nav {
 nav a {
     padding: .2em;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.8);
 }
 
 /* Hero Section */
@@ -53,6 +49,7 @@ nav a {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: rgba(255, 255, 255, .8);
+    border-radius: 0 0 5px 5px;
     padding: 2em;
 }
 
@@ -77,16 +74,17 @@ nav a {
     justify-content: flex-end;
     padding-top: .5em;
     background-color: rgba(255, 255, 255, .8);
+    border-radius: 5px 5px 0 0;
 }
 
 .social i {
-    color: #78B4E3;
+    color: #4182C5;
     padding: 0 1em 0 0;
     font-size: 1.8rem;
 }
 
 .social i:hover {
-    color: #4182C5;
+    color: #78B4E3;
 }
 
 /* Countdown Clock */
@@ -119,12 +117,7 @@ smalltext {
 }
 
 
-/* Points Section
-
-.card-body {
-    height: 40vmin;
-}
-*/
+/* Points Section */
 video {
     width: 100%;
     border-radius: 5px;
@@ -300,6 +293,12 @@ footer {
 .footer-three {
     text-align: center;
     padding: 1.5em;
+}
+
+.foot-social i {
+    color: white;
+    padding: .5em;
+    margin: .5em;
 }
 
 .copy {
