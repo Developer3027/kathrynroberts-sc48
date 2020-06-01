@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,200&display=swap');
+@import 'navbar.css';
+
+root {}
 
 * {
     margin: 0;
@@ -7,6 +10,11 @@
 }
 
 /* Nav */
+
+nav {
+    border-radius: 3px;
+}
+
 .title {
     font-size: 1.8em;
     padding: 0em;
@@ -25,18 +33,26 @@
 
 }
 
+.nav-hide {
+    display: none !important;
+}
+
+nav a {
+    padding: .2em;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
 /* Hero Section */
 .hero {
     background: url('./img/flag.jpg') no-repeat center center fixed;
     background-size: cover;
-    margin-top: 6.5%;
 }
 
 .layer {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: rgba(255, 255, 255, .8);
-    border-radius: 5px;
     padding: 2em;
 }
 
@@ -54,6 +70,23 @@
     text-align: center;
     align-items: center;
     font-size: smaller !important;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: .5em;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.social i {
+    color: #78B4E3;
+    padding: 0 1em 0 0;
+    font-size: 1.8rem;
+}
+
+.social i:hover {
+    color: #4182C5;
 }
 
 /* Countdown Clock */
@@ -118,17 +151,9 @@ video {
     padding:1em;
 }
 
-
-/* letter section 
-
-*/
-.letter-a {
-    border: 2px solid lightgrey;
-    border-radius: 5px;
-    background-color: white;
-    padding: .5em;
-    margin: 2em 0;
-    /*filter: drop-shadow(3px 3px 1px #666666);*/
+.navbar-lite {
+    transition: all 1s ease-in-out;
+    background: white;
 }
 
 .envelope {
@@ -151,7 +176,7 @@ video {
     border-bottom: 3px solid lightcoral;
 }
 
-.logo-group {
+.endorse-group {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,14 +186,40 @@ video {
     border-radius: 5px;
 }
 
-/* contact section 
-
-.contact {
+/* act blue section */
+.act-layer {
     display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
+    grid-template-columns: 20% 80%;
+    background-color: rgb(185, 222, 250);
+    border-radius: 5px;
 }
-*/
+
+.actBlue {
+    width: 100%;
+}
+
+.actBlue img {
+    width: 80%;
+    padding:.5em;
+    border-radius: 5px;
+}
+
+.act-info {
+    text-align: center;
+}
+
+.act-info a {
+    padding: .5em 1.5em;
+    background-color: red;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: black;
+}
+
+.act-info a:hover {
+    color: white;
+}
+
 input {
     padding: .5rem;
     margin: 0 5px;
@@ -181,18 +232,6 @@ input {
 
 .btn-div {
     margin-top: 1rem;
-}
-
-
-
-.form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-right: .5rem;
-    margin-bottom: 1em;
-    height: 50vmin;
 }
 
 .one,

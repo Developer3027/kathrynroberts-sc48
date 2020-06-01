@@ -10,40 +10,38 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar container fixed-top navbar-expand-lg bg-light" >
-            <a class="navbar-brand title" href="#">
-            <img src="./img/kr-logo-32.png" width="43" height="32" class="d-inline-block align-center" alt="">
-            KathrynRoberts
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="container navbar-nav d-flex justify-content-around">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about"><h5>About</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><h5>Issues</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#volunteer"><h5>Volunteer</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><h5>Events</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><h5 class="don-btn">Donate</h5></a>
-                </li>
-                </ul>
-            </div>
+    <header class="header">
+        <div class="logo">
+            <img src="./img/kr-logo-32.png" alt="">
+            <span>Kathryn Roberts</span>
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#issues">Issues</a></li>
+                <li><a href="">Volunteer</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="https://secure.actblue.com/donate/kroberts48" class="donate">Donate</a></li>
+            </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
     <main>
 
         <section class="hero-main top-hero">
             <div class="jumbotron jumbotron-fluid hero">
+                <div id="issues" class="social container">
+                    <a href="https://twitter.com/roberts_48" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com/RobertsSC48" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
                 <div class="container layer">
                     <div class="left">
                         <h1 class="display-4"><span class="char-underline">E</span>lection <i class="fas fa-democrat"></i></h1>
@@ -72,8 +70,10 @@
                         </div> 
                     </div>
                 </div>
-                <div class="points container">
-                    <div class="card-deck my-5">
+<!-- Cards -->
+                <div class="container">
+                    <div class="card-deck my-1">
+
                         <div class="card">
                             <div class="video">
                                 <video autoplay loop>
@@ -81,13 +81,43 @@
                                     Sorry, your browser doesn't support embedded videos.
                                 </video>
                             </div>
-                          <div class="card-body">
-                            <h5 class="d-flex card-title justify-content-center"><span class="char-underline">E</span>ducation</h5>
+                          <div class="card-body d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#educationModal">
+                                Education
+                              </button>
                           </div>
                           <div class="card-footer">
                             <small class="d-flex justify-content-center icons"><i class="far fa-star"></i>&nbsp &nbsp<i class="fas fa-star blue fa-lg"></i>&nbsp &nbsp<i class="far fa-star"></i></small>
                           </div>
                         </div>
+<!-- Modal -->
+                        <div class="modal fade py-2" id="educationModal" tabindex="-1" role="dialog" aria-labelledby="EducationModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Education</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="pl-2">
+                                        <li>Equitable funding for public schools</li>
+                                        <li>Minimum yearly salary for teachers, no less than 50K</li>
+                                        <li>Expand collective barganing rights</li>
+                                        <li>Teacher Tenure</li>
+                                        <li>No out-of-pocket expenses for supplies</li>
+                                        <li>Free, universal school meals and incentives for locally sourced food</li>
+                                        <li>School safety including protecting students from harsassment, discrimination, and  violence</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
                         <div class="card">
                             <div class="video">
                                 <video autoplay loop>
@@ -95,13 +125,41 @@
                                     Sorry, your browser doesn't support embedded videos.
                                 </video>
                             </div>
-                          <div class="card-body">
-                            <h5 class="d-flex card-title justify-content-center"><span class="char-underline">M</span>inimum Wage</h5>
-                          </div>
+                            <div class="card-body d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#minWageModal">
+                                    Minimum Wage
+                                  </button>
+                              </div>
                           <div class="card-footer">
                             <small class="d-flex justify-content-center icons"><i class="far fa-star"></i>&nbsp &nbsp<i class="fas fa-star blue fa-lg"></i>&nbsp &nbsp<i class="far fa-star"></i></small>
                           </div>
                         </div>
+<!-- Modal -->
+                            <div class="modal fade py-2" id="minWageModal" tabindex="-1" role="dialog" aria-labelledby="MinWageModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="MinWageModalLabel">Minimum Wage</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>The state minimum wage won't reach $12 / hour until 2022 
+                                            <a href="https://www.scstatehouse.gov/sess123_2019-2020/bills/3395.htm" target="_blank">House Bill</a></p>
+                                        <ul class="pl-2">
+                                            <li>1 Adult with no children needs to earn $11.76 / hr right now to make a living wage</li>
+                                            <li>2 Adults, 1 working, with 2 children need to earn $25.61 / hr right now to make a living wage</li>
+                                        </ul>
+                                        <p>We should have a minimum wage of $15 / hr now that keeps pace with the consumer price index and increases as the cost of living increases</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
                         <div class="card">
                             <div class="video">
                                 <video autoplay loop>
@@ -109,13 +167,39 @@
                                     Sorry, your browser doesn't support embedded videos.
                                 </video>
                             </div>
-                          <div class="card-body">
-                            <h5 class="d-flex card-title justify-content-center"><span class="char-underline">H</span>ealth Care</h5>
+                          <div class="card-body d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#healthModal">
+                                Healthcare
+                              </button>
                           </div>
                           <div class="card-footer">
                             <small class="d-flex justify-content-center icons"><i class="far fa-star"></i>&nbsp &nbsp<i class="fas fa-star blue fa-lg"></i>&nbsp &nbsp<i class="far fa-star"></i></small>
                           </div>
                         </div>
+<!-- Modal -->
+                        <div class="modal fade py-2" id="healthModal" tabindex="-1" role="dialog" aria-labelledby="HealthModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Healthcare</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="pl-2">
+                                        <li>Expand state medicaid coverage to include dental, hearing, vision, and long-term care. Mental health and substance abuse treatment, reproductive and maternity care, prescription drugs and more</li>
+                                        <li>Provide citizen access to outsourcing prescriptions from Canada</li>
+                                        <li>Legalizing medical marijuana for all conditions where the medical community has shown that it is effective</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
                       </div>
                 </div>
               </div>
@@ -138,25 +222,21 @@
             </div>
         </section>
 
-        <section class="logo-group container my-3">
+        <section class="endorse-group container my-3">
             <h1>Your endorsement is appreciated!</h1>
             <p>If your a local company in the district, we would love to show your logo off here. Thank you for your support.</p>
         </section>
 
-        <section id="volunteer" class="contact container">
-            <div class="form">
-                <h4>Sign up for the latest updates</h4>
-                <form>
-                    <div class="one">
-                        <input name="email" id="email" type="email" placeholder="Email" required>
-                        <input name="zip" id="zip" type="number" placeholder="Zip Code">
-                    </div>
-                    
-                    <div class="btn-div">
-                        <button type="submit" class="btn btn-primary btn-form">Send</button>
-                    </div>
-                    
-                </form>
+        <section class="actBlue my-1">
+            <div class=" container act-layer">
+                <div class="act-pic">
+                    <img src="./img/IMG_9762 light edit 3.jpg" alt="">
+                </div>
+                <div class="act-info">
+                    <h1>Donate and help make a difference in our community</h1>
+                    <br>
+                    <a href="https://secure.actblue.com/donate/kroberts48" target="_blank">Donate</a>
+                </div>
             </div>
         </section>
 

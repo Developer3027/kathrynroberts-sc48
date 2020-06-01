@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,200&display=swap');
 
 :root {
-    --background: rgba(0, 195, 255, 0.85);
+    --background: white;
 }
 
 *, *::before, *::after {
@@ -10,23 +10,21 @@
 
 body {
     margin: 0;
-    background: #222222;
+    background: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-}
-
-.content {
-    height: 200vh;
 }
 
 /* navigation */
 
 header {
-    background: var(--background);
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
+}
+.header {
+    background: var(--background);
 }
 
 .logo {
@@ -88,6 +86,14 @@ nav {
     position: relative;
 }
 
+.hide-nav {
+    display: none;
+}
+
+.show-nav {
+    display: block;
+}
+
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     content: '';
@@ -134,6 +140,10 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+.scrolled {
+    --background: white;
+}
+
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
@@ -141,7 +151,7 @@ nav a:hover {
 
     header {
         display: grid;
-        grid-template-columns: 1fr auto minmax(15fr) 1fr;
+        grid-template-columns: 1fr auto minmax(600px, 15fr) 1fr;
         padding: .8em;
     }
 
