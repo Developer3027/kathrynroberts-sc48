@@ -247,11 +247,6 @@ input {
     align-items: center;
 }
 
-.map {
-    align-items: center;
-    margin: auto;
-}
-
 /* footer section */
 footer {
     background-color: #4182C5;
@@ -330,39 +325,30 @@ input {
         flex-direction: column;
     }
 
-    /* .card-body {
-        height: 70vmin;
-    } */
-
     .about-img img {
         width: 47%;
         padding:.5em;
     }
 
-    .envelope {
-        display: flex;
-        flex-direction: column;
+    .endorse-group h1 {
+        font-size: 1.2em;
     }
 
-    .logo-group {
-        display: none;
+    .act-layer {
+        height: 100%;
+        padding: 1em 0;
     }
 
-    .contact {
-        display: flex;
-        flex-direction: column;
+    .actBlue img {
+        width: 100%;
     }
 
-    .form {
-        height: 60vmin;
+    .act-info h1 {
+        font-size: 1.2em;
     }
 
     form {
         width: 90%;
-    }
-
-    .map {
-        display: none;
     }
 
     .footer {
