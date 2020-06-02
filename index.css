@@ -249,7 +249,7 @@ footer {
 .footer {
     display: grid;
     padding: 1.5em 0;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 50% 50%;
 }
 
 .footer-one {
@@ -269,15 +269,6 @@ footer {
 
 .btn-f-f {
     margin: .3em;
-}
-
-.footer-two {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 0 1em;
-    margin: .5em;
-    margin-top: 1em;
 }
 
 .footer-info {
