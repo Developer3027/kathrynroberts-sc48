@@ -175,7 +175,7 @@ video {
     align-items: center;
     flex-direction: column;
     padding: 1em;
-    background-color: #78B4E3;
+    background-color: rgb(185, 222, 250);
     border-radius: 5px;
 }
 
@@ -223,21 +223,11 @@ input {
     padding: 10px 40px;
 }
 
-.btn-div {
-    margin-top: 1rem;
-}
-
-.one,
-.two {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0;
-}
-
-.three {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.event-group {
+    text-align: center;
+    background-color: rgb(185, 222, 250);
+    padding: 1em;
+    border-radius: 5px;
 }
 
 /* footer section */
