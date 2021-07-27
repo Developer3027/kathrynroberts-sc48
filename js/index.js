@@ -1,5 +1,5 @@
 /* countdown clock */
-const deadline = new Date('nov 3, 2020 06:00:00').getTime()
+const deadline = new Date('nov 3, 2022 06:00:00').getTime()
 
 function addZero (n) {
   return (parseInt(n, 10) < 10 ? '0' : '') + n
